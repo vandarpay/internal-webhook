@@ -1,0 +1,33 @@
+{
+    "name": "vandarpay/internal-webhook",
+    "description": "Send internal webhook",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vandarpay\\InternalWebhook\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vandar",
+            "email": "info@vandar.io"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vandarpay\\InternalWebhook\\Providers\\InternalWebhookServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.0|^8.1|^8.2|^8.3",
+        "illuminate/support": "^9.0|^10.0|^11.0",
+        "illuminate/contracts": "^9.0|^10.0|^11.0",
+        "illuminate/log": "^9.0|^10.0|^11.0",
+        "illuminate/http": "^9.0|^10.0|^11.0",
+        "illuminate/queue": "^9.0|^10.0|^11.0"
+    }
+}
